@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Baskets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+        box-sizing: border-box;
+      }
+      body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(Images/backgrounds/bgfull13.avif);
+          background-size:cover;
+          background-position: center; 
+        }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+        .products .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            /* padding-right: 0 0px;  */
+            padding-left: 3rem;
+           
+        }
+
+        .products .box-container .box{
+            /* flex: 1 1 30rem; */
+            box-shadow: 0 .5rem 1.5rem;
+            border-radius: .5rem;
+            border: .1rem solid black;
+            position: relative;
+            float: left;
+            width: 30%;
+            /* height: 100%; */
+            margin-bottom: 16px;
+            /* padding: 2 2px;  */
+        }
+
+        .products .box-container .box .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .products .box-container .box .content h3{
+            font-size: 2rem;
+            color: #333;
+            margin:0;
+        }
+
+        .products .box-container .box .content .price{
+            font-size: 2.5rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .products .box-container .box .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .products .box-container .box .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+        
+        .products .box-container .box .discount{
+            position: absolute;
+            top: 1rem; left: 1rem;
+            padding: .7rem 1rem;
+            font-size: 2rem;
+            color: darksalmon;
+            background-color: rgba(255, 51, 153, .05);
+            z-index: 1;
+            border-radius: .5rem;
+        }
+
+        .products .box-container .box .image{
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+        }
+
+        .products .box-container .box .image img{
+            height: 25rem;
+        }
+
+        .products .box-container .box:hover .image img{
+            transform:scale(1.1);
+        }
+        .products .box-container .box .image .icons{
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            display: flex;
+        }
+
+        .products .box-container .box .image .icons a{
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.5rem;
+            width: 50%;
+            background-color: indianred;
+            color:white;
+            text-decoration: none;
+        }
+       
+
+        .products .box-container .box .image .icons .cart-btn{
+            border-left: .1rem solid grey;
+            border-right: .1rem solid grey;
+            width: 100%;
+           
+        }
+
+    
+        .products .box-container .box .image .icons a:hover{
+            /* background: #333; */
+            transform:scale(1.5.1);
+            color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket1.jpeg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Brown Cane Gift Hamper Basket</h3>
+                    <div class="price">&#x20B9;599 <span>&#x20B9;699</span></div>
+                    <p>Contains variety of chocolate decorated in a brown cane basket</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket2.jpeg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Mixed Fruit Basket</h3>
+                    <div class="price">&#x20B9;999 <span>&#x20B9;1299</span></div>
+                    <p>Basket comprises of 3 apples, 5 oranges, 5 guava, bunch of strawberries and blueberries, etc decorated with a lovely Ribbon</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket3.jpeg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Personal Grooming Gift Basket</h3>
+                    <div class="price">&#x20B9;1099 <span>&#x20B9;1499</span></div>
+                    <p> Beauty products combo in nice wrapping </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Soft Toy Basket</h3>
+                    <div class="price">&#x20B9;899 <span>&#x20B9;1199</span></div>
+                    <p> Pack contains a soft toy selected by customer. Or Teddy is selected by default with a decent wrap </p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket10.jpg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Chocolate Basket</h3>
+                    <div class="price">&#x20B9;2199 <span>&#x20B9;2599</span></div>
+                    <p>Pack consists of a combo of exotic chocolate in a handwoven basket</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket6.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Dry Fruits Combo Basket</h3>
+                    <div class="price">&#x20B9;1999 <span>&#x20B9;2199</span></div>
+                    <p>Basket consists of dry fruits like Cashew, Pistachio, Almonds, Raisins and Date fruit each of 250 g in seal packed containers</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket7.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Dry Fruit Basket</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    <p>Basket consists of dry fruits like Cashew, Pistachio and Almonds each of 250 g in seal packed containers</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket8.jpg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Dry Fruit Sack Basket</h3>
+                    <div class="price">&#x20B9;2499 <span>&#x20B9;3190</span></div>
+                    <p>Basket consists of dry fruits like Cashew, Pistachio, Almonds and Raisins each of 250 g in the pretty decorated sack form</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Mixed Fruit Basket</h3>
+                    <div class="price">&#x20B9;1099 <span>&#x20B9;1299</span></div>
+                    <p>Basket comprises of 3 apples, 5 oranges, 5 guava, bunch of strawberries and blueberries, etc decorated with a lovely Ribbon</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="Images/giftbaskets/basket5.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Soft Toy Combo Basket</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    <p>Pack contains a Teddy and various different toys with a decent wrap</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

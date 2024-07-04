@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            box-shadow: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            background: url(Images/backgrounds/bgfull11.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .wrapper{
+            width:500px;
+            height: 680px;
+            background-color: rgba(255,255,255,.1);
+            border: 2px solid rgba(255, 255, 255, .2);
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+            backdrop-filter:blur(50px);
+            border-radius: 30px;
+            color: #fff;
+            padding: 30px 35px 55px;
+            margin-top: 40px;
+        }
+
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 0;
+            cursor:pointer;
+        }
+
+        .wrapper .input-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+        }
+
+        .input-box .input-field{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            margin: 13px ;
+        }
+
+        .input-box .input-field input{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 6px;
+            padding: 15px 15px 15px 40px;
+            cursor: pointer;
+        }
+
+        .input-box .input-field input::placeholder{
+            color: #fff;
+        }
+
+        .input-box .input-field i{
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+        .wrapper label{
+            display: inline-block;
+            font-size: 14.5px;
+            margin: 10px 0 23px;
+        }
+
+        .wrapper label input{
+            accent-color: #fff;
+            margin-right: 5px;
+        }
+        .wrapper .btn{
+            width: 100%;
+            height: 45px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color:#333;
+            font-weight: 600;
+        }
+
+        @media(max-width: 576px){
+            .input-box .input-field{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        .navbar {
+            background-color:darkslategray; 
+            width:100%;
+            height: 40px;
+            position: fixed;
+            top: 0px;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+            /* position: fixed; */
+        }
+
+        /* Change the color of links on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        header{
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background-color:darkslategray;
+            display: flex;
+            /* align-items: center; */
+            justify-content: left;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        }
+
+        html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding: 6rem;
+        overflow: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="nav navbar-nav navbar-right">
+                    <a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <header>   
+          <nav class="navbar">
+            <div class="container-fluid">   
+              <div><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav> 
+       </header>
+    
+    
+    <div class="wrapper">
+        <form action="">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Contact Number" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox">I Agree Terms and Conditions
+            </label>
+
+            <a href="Login.html"><button type="submit" class="btn">Register</button></a>
+        </form>
+    </div>
+</body>
+</html>

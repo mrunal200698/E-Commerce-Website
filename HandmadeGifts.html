@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Gifts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 0px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border:none;
+          outline: 0;
+          display:inline-block;
+          padding: 12px 24px;
+          color: white;
+          background-color:black;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 5px;
+          font-size: 16px;
+          position:static ;
+          top: 50%;
+        }
+        
+        .button a{
+          text-decoration: none;
+          color: white;
+        }
+
+        .button:hover {
+          background-color:green;
+        }
+  
+        img {
+          border-radius: 5px 5px 0 0;
+          vertical-align:middle;
+          height: 150px;
+          width:fit-content;
+        }
+  
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(Images/backgrounds/bgfull2.jpg);
+          background-size:cover;
+          background-position: center; 
+        }
+  
+        .btn{
+          display: inline-block;
+          margin-top: 0.5rem;
+          border-radius: 5rem;
+          background-color:white;
+          color: black;
+          padding: .5em 1rem;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+     
+        .row .column .card .container .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .row .column .card .container .content h5{
+            font-size: 1.5rem;
+            color: #333;
+            margin:0;
+        }
+
+        .row .column .card .container .content .price{
+            font-size: 2rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .row .column .card .container .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .row .column .card .container .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+      
+        </style>
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/handmadegifts/bestfromwastehomedecor.png" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Best From Waste HomeDecor</h5>
+                <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+                <!-- <p>Home decor madeup from waste bottles</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/handmadegifts/booktags.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Customized Book Tags with Pictures</h5>
+                <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+                <!-- <p>Customized Book Tags with Pictures</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/handmadegifts/chocolates.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Homemade customized flavoured chocolates</h5>
+                <div class="price">&#x20B9;1599 <span>&#x20B9;1699</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/handmadegifts/dreamcatcher.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Dream Catcher with LED Lights</h5>
+                <div class="price">&#x20B9;799 <span>&#x20B9;999</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/handmadegifts/embroidery.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Customized Occassional Embroidery Work</h5>
+                <div class="price">&#x20B9;1999 <span>&#x20B9;2199</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/handmadegifts/homemadechocolate.jpg" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Homemade customized flavoured chocolates</h5>
+              <div class="price">&#x20B9;1599 <span>&#x20B9;1899</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/handmadegifts/scentedcandles.jpeg" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Set of Scented Candles with Extra Fragrance</h5>
+              <div class="price">&#x20B9;1299 <span>&#x20B9;1399</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+        
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/handmadegifts/wallhanging.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Beautifull Wall Hanging with LED Lights</h5>
+              <div class="price">&#x20B9;2999 <span>&#x20B9;3399</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/handmadegifts/photobook.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Beautifull Photo Book Customized</h5>
+              <div class="price">&#x20B9;1899 <span>&#x20B9;1999</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/handmadegifts/explosionb.jpeg" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Beautifull Explosion Box with LED Lights</h5>
+              <div class="price">&#x20B9;1999 <span>&#x20B9;2199</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+      
+   
+</body>
+</html>

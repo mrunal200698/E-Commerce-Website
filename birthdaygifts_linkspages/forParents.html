@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts For Parents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+        .products .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            /* padding-right: 0 0px;  */
+            padding-left: 3rem;
+           
+        }
+
+        .products .box-container .box{
+            /* flex: 1 1 30rem; */
+            box-shadow: 0 .5rem 1.5rem;
+            border-radius: .5rem;
+            border: .1rem solid black;
+            position: relative;
+            float: left;
+            width: 30%;
+            /* height: 100%; */
+            margin-bottom: 16px;
+            /* padding: 2 2px;  */
+        }
+
+        .products .box-container .box .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .products .box-container .box .content h3{
+            font-size: 2rem;
+            color: #333;
+            margin:0;
+        }
+
+        .products .box-container .box .content .price{
+            font-size: 2.5rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .products .box-container .box .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .products .box-container .box .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+        
+        .products .box-container .box .discount{
+            position: absolute;
+            top: 1rem; left: 1rem;
+            padding: .7rem 1rem;
+            font-size: 2rem;
+            color: darksalmon;
+            background-color: rgba(255, 51, 153, .05);
+            z-index: 1;
+            border-radius: .5rem;
+        }
+
+        .products .box-container .box .image{
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+        }
+
+        .products .box-container .box .image img{
+            height: 25rem;
+        }
+
+        .products .box-container .box:hover .image img{
+            transform:scale(1.1);
+        }
+        .products .box-container .box .image .icons{
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            display: flex;
+        }
+
+        .products .box-container .box .image .icons a{
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.5rem;
+            width: 50%;
+            background-color: indianred;
+            color:white;
+            text-decoration: none;
+        }
+       
+
+        .products .box-container .box .image .icons .cart-btn{
+            border-left: .1rem solid grey;
+            border-right: .1rem solid grey;
+            width: 100%;
+           
+        }
+
+    
+        .products .box-container .box .image .icons a:hover{
+            /* background: #333; */
+            transform:scale(1.5.1);
+            color:red;
+        }
+
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(../Images/backgrounds/bgfull2.jpg); 
+          background-size:cover;
+          background-position: center; 
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Customized mugs for the parents. MOM DAD written over it</h3>
+                    <div class="price">&#x20B9;1399 <span>&#x20B9;1699</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img2.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Customized Family Wall Clock</h3>
+                    <div class="price">&#x20B9;999 <span>&#x20B9;1299</span></div>
+                    </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img3.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Motichoor Laddoo Cake</h3>
+                    <div class="price">&#x20B9;2999 <span>&#x20B9;3259</span></div>
+                     </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img4.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Cake & Bouquet Combo</h3>
+                    <div class="price">&#x20B9;899 <span>&#x20B9;1199</span></div>
+                    </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img5.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ganesha & Lakshmi Idols for Diwali</h3>
+                    <div class="price">&#x20B9;2199 <span>&#x20B9;2599</span></div>
+                    </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img6.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ganesh Idol</h3>
+                    <div class="price">&#x20B9;1999 <span>&#x20B9;2199</span></div>
+                    </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img7.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Devotional Idol</h3>
+                    <div class="price">&#x20B9;2199 <span>&#x20B9;2599</span></div>
+                    </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img8.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Radha-Krishna Bronze Idol</h3>
+                    <div class="price">&#x20B9;2499 <span>&#x20B9;3190</span></div>
+                    </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img9.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Gold Plated Tray set </h3>
+                    <div class="price">&#x20B9;2599 <span>&#x20B9;2699</span></div>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img10.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Incence sticks combo</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                   </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-40%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img11.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Shree Ganesh Idol</h3>
+                    <div class="price">&#x20B9;1599 <span>&#x20B9;1999</span></div>
+                     </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/img12.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>LED Item</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/p-bold-and-beautiful-pearl-necklace-135796-m.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Pearl Necklace</h3>
+                    <div class="price">&#x20B9;2999 <span>&#x20B9;3199</span></div>
+                    </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forParents/p-customized-wooden-eyeglasses-stand-for-grandmother-117412-m.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Customized Wooden EyeGlasses Stand</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

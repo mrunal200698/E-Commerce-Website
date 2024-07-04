@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Basket</title>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 0px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border:none;
+          outline: 0;
+          display:inline-block;
+          padding: 12px 24px;
+          color: white;
+          background-color:black;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 5px;
+          font-size: 16px;
+          position:static ;
+          top: 50%;
+        }
+        
+        .button a{
+          text-decoration: none;
+          color: white;
+        }
+        
+        .button:hover {
+          background-color:green;
+        }
+  
+        img {
+          border-radius: 5px 5px 0 0;
+          vertical-align:middle;
+          height: 150px;
+          width:fit-content;
+        }
+  
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(Images/backgrounds/chocolatebanner1.jpg);
+          background-size:cover;
+          background-position: center; 
+        }
+  
+        .btn{
+          display: inline-block;
+          margin-top: 0.5rem;
+          border-radius: 5rem;
+          background-color:white;
+          color: black;
+          padding: .5em 1rem;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+     
+        .row .column .card .container .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .row .column .card .container .content h5{
+            font-size: 1.5rem;
+            color: #333;
+            margin:0;
+        }
+
+        .row .column .card .container .content .price{
+            font-size: 2rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .row .column .card .container .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .row .column .card .container .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+      
+        </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/chocolatebasket/CHOCOLATE-BASKET.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Chocolate Basket with variety of chocolates</h5>
+                <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+               <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/chocolatebasket/chocolateflowers.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Chocolate Flowers Basket Decoration</h5>
+                <div class="price">&#x20B9;1599 <span>&#x20B9;1759</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+                <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/chocolatebasket/homemadechocolatehamper1.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Handmade Chocolates Decorated Hamper</h5>
+                <div class="price">&#x20B9;1999 <span>&#x20B9;2199</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+                <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/chocolatebasket/homemadechocolatehamper2.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Customized Handmade Chocolate Basket</h5>
+                <div class="price">&#x20B9;2299 <span>&#x20B9;2459</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/chocolatebasket/homemadechocolatehamper3.jpg" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Assorted Homemade Chocolate Hamper</h5>
+                <div class="price">&#x20B9;1899 <span>&#x20B9;2099</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/chocolatebasket/lavishchocolatebasket.jpeg" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Lavish Chocolate Basket Decorated with flowers</h5>
+              <div class="price">&#x20B9;1405 <span>&#x20B9;1610</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+          <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/chocolatebasket/basket1.jpg" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Assorted Cadbury Hamper Basket </h5>
+              <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+          <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+        
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/chocolatebasket/chocolatesbasketarrangement_2.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Cadbury Basket with beautiful arrangement</h5>
+              <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+          <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/chocolatebasket/mixedchocolatesbasketarrangemen2.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Lavish Chocolate Hamper Delicacy</h5>
+              <div class="price">&#x20B9;1059 <span>&#x20B9;1159</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+          <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/chocolatebasket/redrosesbouquetchocolates.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Chocolates & Red Rose Bouquet</h5>
+              <div class="price">&#x20B9;1499 <span>&#x20B9;1659</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+          <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

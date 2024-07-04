@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts For Her</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+        .products .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            /* padding-right: 0 0px;  */
+            padding-left: 3rem;
+           
+        }
+
+        .products .box-container .box{
+            /* flex: 1 1 30rem; */
+            box-shadow: 0 .5rem 1.5rem;
+            border-radius: .5rem;
+            border: .1rem solid black;
+            position: relative;
+            float: left;
+            width: 30%;
+            /* height: 100%; */
+            margin-bottom: 16px;
+            /* padding: 2 2px;  */
+        }
+
+        .products .box-container .box .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .products .box-container .box .content h3{
+            font-size: 2rem;
+            color: #333;
+            margin:0;
+        }
+
+        .products .box-container .box .content .price{
+            font-size: 2.5rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .products .box-container .box .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .products .box-container .box .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+        
+        .products .box-container .box .discount{
+            position: absolute;
+            top: 1rem; left: 1rem;
+            padding: .7rem 1rem;
+            font-size: 2rem;
+            color: darksalmon;
+            background-color: rgba(255, 51, 153, .05);
+            z-index: 1;
+            border-radius: .5rem;
+        }
+
+        .products .box-container .box .image{
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+        }
+
+        .products .box-container .box .image img{
+            height: 25rem;
+        }
+
+        .products .box-container .box:hover .image img{
+            transform:scale(1.1);
+        }
+        .products .box-container .box .image .icons{
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            display: flex;
+        }
+
+        .products .box-container .box .image .icons a{
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.5rem;
+            width: 50%;
+            background-color: indianred;
+            color:white;
+            text-decoration: none;
+        }
+       
+
+        .products .box-container .box .image .icons .cart-btn{
+            border-left: .1rem solid grey;
+            border-right: .1rem solid grey;
+            width: 100%;
+           
+        }
+
+    
+        .products .box-container .box .image .icons a:hover{
+            /* background: #333; */
+            transform:scale(1.5.1);
+            color:red;
+        }
+        
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(../Images/backgrounds/bgfull2.jpg); 
+          background-size:cover;
+          background-position: center; 
+        }
+    </style>
+</head>
+<body>
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>HandBag Gift Hamper</h3>
+                    <div class="price">&#x20B9;2199 <span>&#x20B9;2399</span></div>
+                    <p>A premium HandBag in sober colors along with a home decor item, a giftcard and a Ferrero Rocher chocolate pack</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bouquet & Cake combo</h3>
+                    <div class="price">&#x20B9;899 <span>&#x20B9;1099</span></div>
+                    <p>A bouquet of pretty flowers decorated with a cute ribbon along with a beautiful cake with a customized message written over</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img3.jpg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Decor items</h3>
+                    <div class="price">&#x20B9;799 <span>&#x20B9;1099</span></div>
+                    <p> A sober storable jar with a beautiful home decor item wrapped in a box</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Soft Toy Basket</h3>
+                    <div class="price">&#x20B9;1499 <span>&#x20B9;1749</span></div>
+                    <p> Contains beautiful Chain & Pendent customized by customer in different variety of material like silver, rose gold, gold plated etc. </p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img5.jpg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Chocolate Basket</h3>
+                    <div class="price">&#x20B9;1899 <span>&#x20B9;2199</span></div>
+                    <p>Pack consists of a combo of A premium quality coffee mug, a perfume set and 2 pieces of Aromatic Candles</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Combo Basket</h3>
+                    <div class="price">&#x20B9;1999 <span>&#x20B9;2099</span></div>
+                    <p>Combo consists of a premium quality watch, a Yardley London perfume set, 2 quantity of Dairy Milk Silk, a Ferrero Rocher chocolate box and a giftcard</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Floral Watch</h3>
+                    <div class="price">&#x20B9;2699 <span>&#x20B9;2999</span></div>
+                    <p>A premium quality Floral Watch with offwhite colored flower belts</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img8.jpg"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bracelet</h3>
+                    <div class="price">&#x20B9;1599 <span>&#x20B9;1899</span></div>
+                    <p>A sober Rose Gold Flower Bracelet</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bracelet</h3>
+                    <div class="price">&#x20B9;799 <span>&#x20B9;899</span></div>
+                    <p>A very cute Rose Gold and silver combination Bracelet wrapped in a cute small decorative box</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img10.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Analog Watch</h3>
+                    <div class="price">&#x20B9;2599 <span>&#x20B9;2959</span></div>
+                    <p>Pack contains a beautiful watch customized in the selectable varieties like silver, rose gold and gold plated</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forHer/img11.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bracelet</h3>
+                    <div class="price">&#x20B9;1659 <span>&#x20B9;1999</span></div>
+                    <p>Pack contains a beautiful Rose Gold Bracelet</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+</body>
+</html>

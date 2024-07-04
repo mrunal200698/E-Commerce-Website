@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Gifts</title>
+    <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 0px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border:none;
+          outline: 0;
+          display:inline-block;
+          padding: 12px 24px;
+          color: white;
+          background-color:black;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 5px;
+          font-size: 16px;
+          position:static ;
+          top: 50%;
+        }
+        
+        .button a{
+          text-decoration: none;
+          color: white;
+        }
+
+        .button:hover {
+          background-color:green;
+        }
+  
+        img {
+          border-radius: 5px 5px 0 0;
+          vertical-align:middle;
+          height: 150px;
+          width:fit-content;
+        }
+  
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(Images/backgrounds/bgfull1.jpg);
+          background-size:cover;
+          background-position: center; 
+        }
+  
+        .btn{
+          display: inline-block;
+          margin-top: 0.5rem;
+          border-radius: 5rem;
+          background-color:white;
+          color: black;
+          padding: .5em 1rem;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+     
+        .row .column .card .container .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .row .column .card .container .content h5{
+            font-size: 1.5rem;
+            color: #333;
+            margin:0;
+        }
+
+        .row .column .card .container .content .price{
+            font-size: 2rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .row .column .card .container .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .row .column .card .container .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+      
+        </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/customized/p-crystal-glow-touch-sensor-personalized-led-lamp-269054-m.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Personalized LED Lamp with Name</h5>
+                <div class="price">&#x20B9;1699 <span>&#x20B9;1859</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/customized/p-refreshing-sip-personalized-matte-finish-bottle-pink-275630-m.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Personalized Matte Finish Bottle</h5>
+                <div class="price">&#x20B9;1159 <span>&#x20B9;1399</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/customized/personalized-bottle.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Personalized Bottle with Names</h5>
+                <div class="price">&#x20B9;1299 <span>&#x20B9;1399</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/customized/personalized_bdayset.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Personalized Birthday Set with Photograph</h5>
+                <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <img src="Images/customized/personalized_jwellery_organizer.webp" alt="Jane" style="width:100%">
+              <div class="content">
+                <h5>Personalized Jwellery Organizer</h5>
+                <div class="price">&#x20B9;699 <span>&#x20B9;999</span></div>
+                <!-- <p>A Water Bottle with temperature censor</p> -->
+            </div>
+              <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_leather_journal.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized Leather Journal</h5>
+              <div class="price">&#x20B9;899 <span>&#x20B9;1099</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_LED_cusion.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized LED Cushion</h5>
+              <div class="price">&#x20B9;999 <span>&#x20B9;1159</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+        
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_menbracelet.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized Men's Bracelet</h5>
+              <div class="price">&#x20B9;1799 <span>&#x20B9;1999</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_namependtand.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized Name Pendant</h5>
+              <div class="price">&#x20B9;1999 <span>&#x20B9;2299</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_pillow.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized Pillow with Name</h5>
+              <div class="price">&#x20B9;799 <span>&#x20B9;859</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalized_walletcombo.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized Wallet Combo</h5>
+              <div class="price">&#x20B9;1099 <span>&#x20B9;1299</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div class="container">
+            <img src="Images/customized/personalizedledlamp.webp" alt="Jane" style="width:100%">
+            <div class="content">
+              <h5>Personalized LED Lamp with Names</h5>
+              <div class="price">&#x20B9;999 <span>&#x20B9;1399</span></div>
+              <!-- <p>A Water Bottle with temperature censor</p> -->
+          </div>
+            <button class="button"><a href="AddToCart.html">Add To Cart</a></button>
+          </div>
+        </div>
+      </div>
+        
+      
+</body>
+</html>

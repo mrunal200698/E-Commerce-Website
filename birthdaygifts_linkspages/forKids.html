@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts For Kids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+        .products .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            /* padding-right: 0 0px;  */
+            padding-left: 3rem;
+           
+        }
+
+        .products .box-container .box{
+            /* flex: 1 1 30rem; */
+            box-shadow: 0 .5rem 1.5rem;
+            border-radius: .5rem;
+            border: .1rem solid black;
+            position: relative;
+            float: left;
+            width: 30%;
+            /* height: 100%; */
+            margin-bottom: 16px;
+            /* padding: 2 2px;  */
+        }
+
+        .products .box-container .box .content{
+            /* position: relative; */
+            text-align: center;
+            /* overflow: hidden; */
+            
+        }
+
+        .products .box-container .box .content h3{
+            font-size: 2rem;
+            color: #333;
+            margin:0;
+        }
+
+        .products .box-container .box .content .price{
+            font-size: 2.5rem;
+            color:indianred;
+            font-weight: bolder;
+            /* padding-top: 1rem; */
+        }
+
+        /* .products .box-container .box .content p{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        } */
+
+        .products .box-container .box .content .price span{
+            font-size: 1.5rem;
+            color: #999;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+        
+        .products .box-container .box .discount{
+            position: absolute;
+            top: 1rem; left: 1rem;
+            padding: .7rem 1rem;
+            font-size: 2rem;
+            color: darksalmon;
+            background-color: rgba(255, 51, 153, .05);
+            z-index: 1;
+            border-radius: .5rem;
+        }
+
+        .products .box-container .box .image{
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+        }
+
+        .products .box-container .box .image img{
+            height: 25rem;
+        }
+
+        .products .box-container .box:hover .image img{
+            transform:scale(1.1);
+        }
+        .products .box-container .box .image .icons{
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            display: flex;
+        }
+
+        .products .box-container .box .image .icons a{
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.5rem;
+            width: 50%;
+            background-color: indianred;
+            color:white;
+            text-decoration: none;
+        }
+       
+
+        .products .box-container .box .image .icons .cart-btn{
+            border-left: .1rem solid grey;
+            border-right: .1rem solid grey;
+            width: 100%;
+           
+        }
+
+    
+        .products .box-container .box .image .icons a:hover{
+            /* background: #333; */
+            transform:scale(1.5.1);
+            color:red;
+        }
+        
+        body{
+          /* display:inline-flex;  */
+          align-items: center;
+          min-height: 100vh; 
+          background: url(../Images/backgrounds/bgfull1.jpg); 
+          background-size:cover;
+          background-position: center; 
+        }
+    </style>
+</head>
+<body>
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img1.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Rainbow Cushion</h3>
+                    <div class="price">&#x20B9;999 <span>&#x20B9;1199</span></div>
+                    <p>A soft Cushion with customized name of kid on the Rainbow</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img2_unicon cake.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Fondant Cake</h3>
+                    <div class="price">&#x20B9;999 <span>&#x20B9;1299</span></div>
+                    <p>A Unicorn themed semi Fondant cake</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img3.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Fondant Cake</h3>
+                    <div class="price">&#x20B9;1599 <span>&#x20B9;1859</span></div>
+                    <p> Fondant Cake with customized themes </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Backpack</h3>
+                    <div class="price">&#x20B9;899 <span>&#x20B9;1199</span></div>
+                    <p>A backpack for kids with customized Names</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img5.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>LED Cushions</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1359</span></div>
+                    <p>LED Cushions in different colors and designs and cutomized Name written over it</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img6.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Photograph puzzle</h3>
+                    <div class="price">&#x20B9;1399 <span>&#x20B9;1499</span></div>
+                    <p>Personalized Photograph puzzles for boys and girls of age 5 to 10</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img7.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Personalized Pen Stand</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    <p>Customized Pen Stand with Photographs. Total photograph needed is 3</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img8.webp"alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Wristband</h3>
+                    <div class="price">&#x20B9;999 <span>&#x20B9;1299</span></div>
+                    <p>A beautiful Warrior themed Wristband especially designed for Boys</p>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/img9.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Caricature</h3>
+                    <div class="price">&#x20B9;1099 <span>&#x20B9;1299</span></div>
+                    <p>A Spider Man Caricature with the customized Face</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/p-cricket-field-semi-fondant-birthday-cake-1kg--141380-m.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Designer Cake</h3>
+                    <div class="price">&#x20B9;2299 <span>&#x20B9;2599</span></div>
+                    <p>Semi Fondant Birthday Cake of 1kg Quantity beautifully designed as the mini cricket pitch with bat, ball, stumps etc</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/p-iron-man-personalized-cushion-192574-m.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Face Cushions for Boys</h3>
+                    <div class="price">&#x20B9;1199 <span>&#x20B9;1599</span></div>
+                    <p>Personalized IronMan Cushions with the baby boy's face printed as the ironman</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="../Images/insidebirthdaygifts/forKids/p-spider-man-forever-personalized-cushion-186820-m.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="../AddToCart.html" class="fas fa-cart-btn" style="font-family:'Times New Roman', Times, serif;">Add To Cart</a>
+                        <a href="#" class="fa fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Name Cushions for Boys</h3>
+                    <div class="price">&#x20B9;1099 <span>&#x20B9;1299</span></div>
+                    <p>Personalized Spiderman Cushions with Name specially designed for baby boys</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

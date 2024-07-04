@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/addtocart.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./javaScript/addtocart.js" async></script>
+</head>
+<body>
+
+    <div class="cartTab">
+        <h1>Shopping Bag</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="Images/babygifts/stackingringtoys.jpg" alt="">
+                </div>
+                <div class="name">Name</div>
+                <div class="totalPrice">&#x20B9;999</div>
+                <div class="quantity">               
+                    <span class="down" onclick='decreaseCount(event,this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up" onclick='increaseCount(event,this)'><b>+</b></span>
+                    &nbsp;&nbsp;&nbsp; 
+                    <button class="remove" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn">
+            <button class="close">Close</button>
+            <button class="checkOut"><b>Check Out</b></button>
+        </div>
+    </div>
+
+
+        <script type="text/javaScript">
+            function increaseCount(a,b) {
+                var input = b.previousElementSibling;
+                var value = parseInt(input.value,10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                input.value = value;
+            }
+
+            function decreaseCount(a,b) {
+                var input = b.nextElementSibling;
+                var value = parseInt(input.value,10);
+                if(value > 1){
+                    value = isNaN(value) ? 0 : value;
+                    value--;
+                    input.value = value;
+                }
+                
+            }
+        </script>
+        <script src="./javaScript/addtocart.js"></script>
+</body>
+</html>
